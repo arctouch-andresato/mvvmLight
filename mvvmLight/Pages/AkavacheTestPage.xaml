@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="mvvmLight.AkavacheTestPage">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout>
+				 <Image Source = "{Binding MyImageSource}" Margin="24"/>
+				<Label HorizontalOptions= "Center" Text="{Binding Status}" FontSize="11"/>
+				<Button AutomationId="TakePictureButton" Text="Take picture" Command="{Binding AddNewImage}" TextColor="#626d71"/>
+				<Entry Text="{Binding Loops}" />
+				<Button AutomationId="LoadCache" Text="Load Cache" Command="{Binding FillOutCache}" TextColor="#666677"/>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
